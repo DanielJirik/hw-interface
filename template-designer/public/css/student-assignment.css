@@ -2,7 +2,34 @@
     width: 50%;
     height: 75vh;
     margin: 5vh auto;
-    background-color: #352F44;
-    color: white;
-    border-radius: 10px;
+    padding-left: 20px;
+    background-color: #C7C8CC;
+    color: black;
+    border-radius: 10px;    
+}
+
+h1{
+    padding: 20px 0 0 10px;
+}
+
+#date{
+    padding: 0 0 20px 10px;
+}
+
+.description{
+    padding-bottom: 10px;    
+}
+
+form{
+    position: relative;
+    height: 100%;
+}
+
+input[type=file], input[type=submit]{
+    position: absolute;
+    bottom: 20px;
+}
+
+input[type=submit]{
+    left: 250px;
 }

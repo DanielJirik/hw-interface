@@ -1,0 +1,22 @@
+{% extends "main.html.twig" %}
+
+{% block style %}
+<link rel="stylesheet" href="css/student-assignment.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form method="post">
+        <h1>{{assignments.a1.name}}</h1>
+        <h3 id="date">Due to {{assignments.a1.date}}</h3>
+        <div class="description">
+            <h3 id="">Description</h3>
+            <p>{{assignments.a1.description}}</p>
+        </div>
+                
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" id="submit" value="Submit">        
+        
+    </form>
+</div>
+{% endblock %}

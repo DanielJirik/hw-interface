@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Helvetica';
+    outline: none;
 }
 
 .navbar{
@@ -18,9 +19,9 @@
 
 .navbar li{
     color: white;
-    width: 85px;
+    width: auto;
     text-align: center;
-    padding: 2em 0;
+    padding: 2em 1em;
     transition-duration: 0.3s;
 }
 
