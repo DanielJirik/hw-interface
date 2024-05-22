@@ -2,21 +2,30 @@
 
 {% block style %}
 <link rel="stylesheet" href="css/student-assignment.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block body %}
 <div class="container">
     <form method="post">
-        <h1>{{assignments.a1.name}}</h1>
-        <h3 id="date">Due to {{assignments.a1.date}}</h3>
+        <h1>{{assignments.a1.title}}</h1>
+        <h3 id="date">Soft deadline: {{assignments.a1.soft_deadline}}</h3>
+        <h3 id="date">Hard deadline: {{assignments.a1.hard_deadline}}</h3>
         <div class="description">
             <h3 id="">Description</h3>
             <p>{{assignments.a1.description}}</p>
         </div>
-                
+
+        <label for="file" id="custom-file-input">        
+            Upload File
+        </label>
         <input type="file" name="file" id="file">
         <input type="submit" name="submit" id="submit" value="Submit">        
         
     </form>
 </div>
+{% endblock %}
+
+{% block navbar %}
+<a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
 {% endblock %}
