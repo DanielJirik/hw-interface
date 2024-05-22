@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+
+.navbar{
+    background-color: #222831;
+    height: 10vh;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.navbar li{
+    color: white;
+    width: 85px;
+    height: 10vh;
+    text-align: center;
+    padding-top: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navtext{
+    color: white;
+    position: absolute;
+    padding: 1.5em 2em;
+}
