@@ -1,6 +1,6 @@
 {
     "template": "teacher/group.html.twig",
-    "var":
+    "vars":
     {
         "name": "PVA"
     }
