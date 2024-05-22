@@ -1,0 +1,35 @@
+div.card{
+    max-width: 8em;
+    max-height: 8em;
+    background-color: #3d495c;
+    margin: 2em;
+    padding: .75em;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.527) 0px 4px 4px 0px;
+}
+.button-r{
+    border-radius: .3em;
+    border-color: rgb(158, 158, 158);
+    padding: .3em;
+    font-family: "Helvetica";
+    font-size: 0.90em;
+    margin-top: 0.4em;
+    min-width: 70%;
+}
+.button-d{
+    border-radius: .3em;
+    border-color: rgb(158, 158, 158);
+    padding: .3em;
+    font-family: "Helvetica";
+    font-size: 0.90em;
+    margin-top: 0.4em;
+    min-width: 70%;
+}
+
+h2.group-name{
+    color: white;
+}
+div.buttons{
+    margin-top: .5em;
+    margin-bottom: .25em;
+}

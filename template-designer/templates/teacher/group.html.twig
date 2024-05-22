@@ -1,8 +1,34 @@
 {% extends "main.html.twig" %}
+
+{% block style %}
+    <link rel="stylesheet" href="css/group.css">
+{% endblock %}
+
+{% block title %}
+    Groups
+{% endblock %}
+
+{% block navtext %}
+    TEACHER
+{% endblock %}
+
 {% block navbar %}
     <ul>
         <a href="import"><li><h2>Import</h2></li></a></li>
         <a href="group"><li><h2>Groups</h2></li></a></li>
         <a href="homeworks-index"><li><h2>Homeworks/Tests</h2></li></a></li>
     </ul>
+{% endblock %}
+
+{% block body %}
+    <div class="card" href="window.open('import');">
+        <h2 class="group-name">{{ name }}</h4>
+        <form method="post">
+            <div class="buttons">
+                <button class="button-r">Rename</button>
+                <br>
+                <button class="button-d">Delete</delete>
+            </div>
+        </form>
+    </div>
 {% endblock %}

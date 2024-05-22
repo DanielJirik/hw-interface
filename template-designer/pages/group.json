@@ -1,3 +1,7 @@
 {
-    "template": "teacher/group.html.twig"
+    "template": "teacher/group.html.twig",
+    "var":
+    {
+        "name": "PVA"
+    }
 }
