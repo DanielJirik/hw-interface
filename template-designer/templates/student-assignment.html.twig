@@ -1,0 +1,24 @@
+{% extends "main.html.twig" %}
+
+{% block style %}
+<link rel="stylesheet" href="css/student-assignment.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form>
+        <h1>Assignment 1</h1>
+        <h2>Due to (date)</h2>
+        <h3>Description</h3>
+        <p>
+        Text je v lingvistice spojitý jazykový útvar,
+        který se uplatňuje v komunikaci jako komplexní jednotka sdělování.<br>
+        Označuje uskupení slov, které dohromady tvoří nějakou výpověď.<br>
+        Pojem se obvykle používá pro psané výpovědi delšího rozsahu (odstavec),<br>
+        lze jej ovšem užít i pro mluvený jazykový projev nebo i krátké výpovědi.<br>
+        Knihy jsou označovány jako umělecké texty, novinové články jako publicistické texty, atd.<br>
+        </p>
+        <input type="file">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+.container{
+    width: 50%;
+    height: 75vh;
+    margin: 5vh auto;
+    background-color: #352F44;
+    color: white;
+    border-radius: 10px;
+}

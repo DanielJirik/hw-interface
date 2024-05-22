@@ -7,7 +7,6 @@
 
 .navbar{
     background-color: #222831;
-    height: 10vh;
     box-shadow: 0 0 50px 0 grey;
 }
 
@@ -20,9 +19,8 @@
 .navbar li{
     color: white;
     width: 85px;
-    height: 10vh;
     text-align: center;
-    padding-top: 2em;
+    padding: 2em 0;
     transition-duration: 0.3s;
 }
 
