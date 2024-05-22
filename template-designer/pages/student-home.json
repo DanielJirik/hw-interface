@@ -1,0 +1,8 @@
+{
+    "template" : "student/student-home.html.twig",
+    "vars" : {
+        "assignments" : [
+            {"title" : "Matika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA"}
+        ]
+    }
+}

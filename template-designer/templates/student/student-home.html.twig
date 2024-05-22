@@ -1,0 +1,35 @@
+{% extends "main.html.twig" %}
+
+{% block style %}
+<link rel="stylesheet" href='{{ asset("css/student-home.css") }}'>
+{% endblock %}
+{% block title %}KYS{% endblock %}
+
+{% block navbar %}
+<a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
+{% endblock %}
+
+{% block body %}
+<main>
+    <div class="switch">
+        <div>
+            <label for="current">Current</label>
+            <input type="radio" checked="checked" name="filter" id="current">
+        </div>
+        <div>
+            <label for="closed">Closed</label>
+            <input type="radio" name="filter" id="closed">
+        </div>
+    </div>
+    <div class="assigment-list">
+        {% for assignment in assignments %}
+        <div class="assigment-element">
+            <div>{{ assignment.title }}</div>
+            <div>{{ assignment.soft }}</div>
+            <div>{{ assignment.hard }}</div>
+            <div>{{ assignment.group }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

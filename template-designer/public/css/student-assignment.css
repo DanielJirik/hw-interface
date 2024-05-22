@@ -13,11 +13,16 @@ h1{
 }
 
 #date{
-    padding: 0 0 20px 10px;
+    padding-left: 10px;
 }
 
 .description{
-    padding-bottom: 10px;    
+    padding: 20px 20px 10px 0;
+}
+
+.description p{
+    text-align: justify;
+    max-width: 600px;
 }
 
 form{
@@ -30,6 +35,37 @@ input[type=file], input[type=submit]{
     bottom: 20px;
 }
 
+input[type=file]{
+    display: none;
+}
+
+#custom-file-input{
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 0.8em;
+    transition-duration: 0.3s;
+}
+
 input[type=submit]{
-    left: 250px;
+    background-color: white;
+    left: 100px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+input[type=submit]:hover, #custom-file-input:hover{
+    background-color: grey;
 }
