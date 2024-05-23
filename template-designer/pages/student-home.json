@@ -2,7 +2,10 @@
     "template" : "student/student-home.html.twig",
     "vars" : {
         "assignments" : [
-            {"title" : "Matika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA"}
+            {"title" : "Matika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : true},
+            {"title" : "Fyzika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : false},
+            {"title" : "PGV", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : false},
+            {"title" : "PVA", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : true}
         ]
     }
 }

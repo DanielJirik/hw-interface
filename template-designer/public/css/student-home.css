@@ -16,7 +16,11 @@ main .switch > div {
     align-items: center;
     color: #212121;
     font-size: 20px;
-    padding: 3px 5px;
+    padding: 3px 7px;
+}
+
+main .switch > div > *, main .switch > div {
+    cursor: pointer;
 }
 
 main .switch > div:nth-child(1) {
@@ -26,9 +30,9 @@ main .switch > div:nth-child(1) {
 }
 
 main .switch > div:nth-child(2) {
-    background-color: #222831;
-    color: white;
+    border: 1px solid #656565;
     border-radius: 0 5px 5px 0;
+    border-left: none;
 }
 
 main .assigment-list {
@@ -36,11 +40,20 @@ main .assigment-list {
 }
 
 main .assigment-element {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 20px;
     border-radius: 5px;
     background-color: rgba(250, 250, 250, 255);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+body main .switch > .selected {
+    background-color: #222831;
+    color: white;
+    border: none;
 }

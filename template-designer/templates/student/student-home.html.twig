@@ -3,7 +3,9 @@
 {% block style %}
 <link rel="stylesheet" href='{{ asset("css/student-home.css") }}'>
 {% endblock %}
-{% block title %}KYS{% endblock %}
+{% block javascripts %}
+{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block navbar %}
 <a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
@@ -12,7 +14,7 @@
 {% block body %}
 <main>
     <div class="switch">
-        <div>
+        <div class="selected">
             <label for="current">Current</label>
             <input type="radio" checked="checked" name="filter" id="current">
         </div>
@@ -22,14 +24,18 @@
         </div>
     </div>
     <div class="assigment-list">
-        {% for assignment in assignments %}
-        <div class="assigment-element">
-            <div>{{ assignment.title }}</div>
-            <div>{{ assignment.soft }}</div>
-            <div>{{ assignment.hard }}</div>
-            <div>{{ assignment.group }}</div>
-        </div>
-        {% endfor %}
+        {% block elements %}
+            {% for assignment in assignments %}
+            {% if assignment.submitted %}
+            <div class="assigment-element">
+                <div>{{ assignment.title }}</div>
+                <div>{{ assignment.soft }}</div>
+                <div>{{ assignment.hard }}</div>
+                <div>{{ assignment.group }}</div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        {% endblock %}
     </div>
 </main>
 {% endblock %}
