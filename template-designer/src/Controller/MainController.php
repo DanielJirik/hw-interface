@@ -10,9 +10,26 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use App\Form\ImportFormType;
 
 class MainController extends AbstractController
-{
+{   
+    #[Route('/import', name: 'import')]
+    public function importForm(Request $request): Response
+    {
+        $form = $this->createForm(ImportFormType::class, null, [
+            'attr'=>[
+                'id'=>'table-header',
+                'method'=>'post'
+            ]
+        ]);
+        $form->handleRequest($request);
+       
+        return $this->render('teacher/import.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
+
     const EXTENSIONS = [
         "yml" => 'yaml',
         'yaml' => 'yaml',
@@ -34,7 +51,8 @@ class MainController extends AbstractController
 
     /**
      * @Route("/{path}", name="main", requirements={"path"=".*"})
-     */
+     */   
+    
     public function index(string $path, Request $request): Response
     {
         list($path, $wantDir) = $this->parsePath("/" . $path);

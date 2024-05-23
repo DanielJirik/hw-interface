@@ -1,8 +1,29 @@
 {% extends "main.html.twig" %}
+
+{% block style %}
+<link rel="stylesheet" href="css/import.css">
+{% endblock %}
+
+{% block title %}
+Import
+{% endblock %}
+
 {% block navbar %}
     <ul>
         <a href="import"><li><h2>Import</h2></li></a></li>
         <a href="group"><li><h2>Groups</h2></li></a></li>
         <a href="homeworks-index"><li><h2>Homeworks/Tests</h2></li></a></li>
     </ul>
+{% endblock %}
+
+{% block body %}
+<div class="import-table">    
+    {{ form_start(form) }}
+        <h1>Import scripts</h1>
+        <label for="import_form_importFile" id="multiple-files">
+        Import
+        </label>
+        {{ form_widget(form.importFile) }}
+    {{ form_end(form)}}    
+</div>
 {% endblock %}

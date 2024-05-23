@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="css/student-assignment.css">
 {% endblock %}
 
+{% block title %}
+Assignments
+{% endblock %}
+
 {% block navbar %}
 <a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
 {% endblock %}
@@ -11,6 +15,7 @@
 {% block body %}
 <div class="container">
     <form method="post">
+        <a href="student-home"><input type="button" name="exit" id="exit" value="Exit"></a>
         <h1>{{assignments.a1.title}}</h1>
         <h3 id="date">Soft deadline: {{assignments.a1.soft_deadline}}</h3>
         <h3 id="date">Hard deadline: {{assignments.a1.hard_deadline}}</h3>
@@ -24,7 +29,6 @@
         </label>
         <input type="file" name="file" id="file">
         <input type="submit" name="submit" id="submit" value="Submit">        
-        
     </form>
 </div>
 {% endblock %}
