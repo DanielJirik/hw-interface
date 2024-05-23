@@ -1,41 +1,29 @@
-{% extends "main.html.twig" %}
+{% extends "home.html.twig" %}
 
 {% block style %}
-<link rel="stylesheet" href='{{ asset("css/student-home.css") }}'>
+    {{ parent() }}
+    <link rel="stylesheet" href='{{ asset("css/student-home.css") }}'>
 {% endblock %}
-{% block javascripts %}
-{% endblock %}
+
 {% block title %}Home{% endblock %}
 
 {% block navbar %}
-<a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
+    <a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
 {% endblock %}
 
-{% block body %}
-<main>
-    <div class="switch">
-        <div class="selected">
-            <label for="current">Current</label>
-            <input type="radio" checked="checked" name="filter" id="current">
-        </div>
-        <div>
-            <label for="closed">Closed</label>
-            <input type="radio" name="filter" id="closed">
-        </div>
+{% block page_header %}
+<div class="switch">
+    <div class="selected">
+        <label for="current">Current</label>
+        <input type="radio" checked="checked" name="filter" id="current">
     </div>
-    <div class="assigment-list">
-        {% block elements %}
-            {% for assignment in assignments %}
-            {% if assignment.submitted %}
-            <div class="assigment-element">
-                <div>{{ assignment.title }}</div>
-                <div>{{ assignment.soft }}</div>
-                <div>{{ assignment.hard }}</div>
-                <div>{{ assignment.group }}</div>
-            </div>
-            {% endif %}
-            {% endfor %}
-        {% endblock %}
+    <div>
+        <label for="closed">Closed</label>
+        <input type="radio" name="filter" id="closed">
     </div>
-</main>
+</div>
+{% endblock %}
+
+{% block card_content %}
+
 {% endblock %}

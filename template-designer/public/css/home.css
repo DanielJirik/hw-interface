@@ -1,0 +1,21 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: minmax(150px, max-content) repeat(auto-fill, 180px);
+    grid-template-rows: auto;
+    place-items: center;
+    place-self: center;
+    justify-content: center;
+}
+
+.card{
+    max-width: 8em;
+    max-height: 8em;
+    min-width: 8em;
+    min-height: 8em;
+    background-color: rgba(250, 250, 250, 255);
+    margin: 2em;
+    padding: .75em;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 2px 2px 0px;
+    cursor: pointer;
+}

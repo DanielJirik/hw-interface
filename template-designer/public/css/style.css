@@ -38,3 +38,7 @@ a{
     position: absolute;
     padding: 1.5em 2em;
 }
+
+.navbar > ul > ul h2 {
+    font-size: 20px;
+}

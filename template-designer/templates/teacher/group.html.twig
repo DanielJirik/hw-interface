@@ -1,8 +1,8 @@
-{% extends "main.html.twig" %}
+{% extends "home.html.twig" %}
 
 {% block style %}
+    {{ parent() }}
     <link rel="stylesheet" href="css/group.css">
-    <script src="js/group.js"></script>
 {% endblock %}
 
 {% block title %}
@@ -21,25 +21,26 @@
     </ul>
 {% endblock %}
 
-{% block body %}
+{% block page_header %}
     <div class="addGroup">
         <input class="newG" type="button" value="+" onclick="openPopup()">
     </div>
-    <div class="cards-container">
-        {% for i in name %}
-            <div class="card" onclick="location.href='import'">
-                <h2 class="group-name">{{ i }}</h4>
-                <form method="post">
-                    <div class="buttons">
-                        <a href="group"><input class="button-r" type="button" value="Rename"></a>
-                        <a href="group"><input class="button-d" type="button"value="Delete"></a>
-                    </div>
-                </form>
-            </div>
-        {% endfor %}
-        <div class="popup" id="popup">
-            <h2>Do you really want to delete the group?</h2>
-            <button type="button" value="ok" onclick="closePopup()"></button>
+{% endblock %}
+
+{% block card_href %}import{% endblock %}
+{% block card_content %}
+<h2 class="group-name">{{ assignment }}</h2>
+    <form method="post">
+        <div class="buttons">
+            <a href="group"><input class="button-r" type="button" value="Rename"></a>
+            <a href="group"><input class="button-d" type="button"value="Delete"></a>
         </div>
+    </form>
+{% endblock %}
+
+{% block page_footer %}
+    <div class="popup" id="popup">
+        <h2>Do you really want to delete the group?</h2>
+        <button type="button" value="ok" onclick="closePopup()"></button>
     </div>
 {% endblock %}

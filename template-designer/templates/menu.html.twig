@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block style %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    {% block style %}
     {% endblock %}
     {% block javascripts %}
     {% endblock %}
@@ -16,7 +16,7 @@
         <h2 id="navtext">{% block navtext %}HW-INTERFACE{% endblock %}</h2>
         <ul>
             {% block navbar %}
-            <a href="test"><li><h2>XYZ</h2></li></a></li>
+            <a href=""><li><h2>XYZ</h2></li></a></li>
             <a href=""><li><h2>XYZ</h2></li></a></li>
             <a href=""><li><h2>XYZ</h2></li></a></li>
             <a href=""><li><h2>XYZ</h2></li></a></li>

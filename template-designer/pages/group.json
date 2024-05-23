@@ -2,6 +2,6 @@
     "template": "teacher/group.html.twig",
     "vars":
     {
-        "name": ["PVA", "MAT", "PGV", "PVA", "MAT", "PGV", "PVA", "MAT", "PGV"]
+        "assignments": ["PVA", "MAT", "PGV", "PVA", "MAT", "PGV", "PVA", "MAT", "PGV"]
     }
 }

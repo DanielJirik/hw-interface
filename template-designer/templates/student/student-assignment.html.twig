@@ -1,15 +1,14 @@
-{% extends "main.html.twig" %}
+{% extends "menu.html.twig" %}
 
 {% block style %}
-<link rel="stylesheet" href="css/student-assignment.css">
+    {{ parent() }}
+    <link rel="stylesheet" href="css/student-assignment.css">
 {% endblock %}
 
-{% block title %}
-Assignments
-{% endblock %}
+{% block title %}Assignments{% endblock %}
 
 {% block navbar %}
-<a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
+    <a href=""><li><i class="fa fa-user fa-2x"></i></li></a></li>
 {% endblock %}
 
 {% block body %}

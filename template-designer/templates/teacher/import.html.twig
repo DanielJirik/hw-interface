@@ -1,12 +1,11 @@
-{% extends "main.html.twig" %}
+{% extends "menu.html.twig" %}
 
 {% block style %}
-<link rel="stylesheet" href="css/import.css">
+    {{ parent() }}
+    <link rel="stylesheet" href="css/import.css">
 {% endblock %}
 
-{% block title %}
-Import
-{% endblock %}
+{% block title %}Import{% endblock %}
 
 {% block navbar %}
     <ul>
