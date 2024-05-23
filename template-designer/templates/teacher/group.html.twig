@@ -2,6 +2,7 @@
 
 {% block style %}
     <link rel="stylesheet" href="css/group.css">
+    <script src="js/group.js"></script>
 {% endblock %}
 
 {% block title %}
@@ -21,14 +22,24 @@
 {% endblock %}
 
 {% block body %}
-    <div class="card" href="window.open('import');">
-        <h2 class="group-name">{{ name }}</h4>
-        <form method="post">
-            <div class="buttons">
-                <button class="button-r">Rename</button>
-                <br>
-                <button class="button-d">Delete</delete>
+    <div class="addGroup">
+        <input class="newG" type="button" value="+" onclick="openPopup()">
+    </div>
+    <div class="cards-container">
+        {% for i in name %}
+            <div class="card" onclick="location.href='import'">
+                <h2 class="group-name">{{ i }}</h4>
+                <form method="post">
+                    <div class="buttons">
+                        <a href="group"><input class="button-r" type="button" value="Rename"></a>
+                        <a href="group"><input class="button-d" type="button"value="Delete"></a>
+                    </div>
+                </form>
             </div>
-        </form>
+        {% endfor %}
+        <div class="popup" id="popup">
+            <h2>Do you really want to delete the group?</h2>
+            <button type="button" value="ok" onclick="closePopup()"></button>
+        </div>
     </div>
 {% endblock %}
