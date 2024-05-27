@@ -6,15 +6,29 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+
 class ImportFormController extends AbstractController
 {
-    #[Route('/new-place', name: 'new_place')]
-    public function importForm(Request $request, EntityManagerInterface $em): Response
+    #[Route('/import', name: 'import')]
+    public function importForm(Request $request): Response
     {
-        $form = $this->createForm(ImportFormType::class);
+        $form = $this->createForm(ImportFormType::class, null, [
+            'attr'=>[
+                'id'=>'table-header',
+                'method'=>'POST'
+            ]
+        ]);
         $form->handleRequest($request);
-       
-        return $this->render('import.html.twig', [
+
+        if ($form->isSubmitted() && $form->isValid()){
+            $importFile = $form->get('importFile')->getData();
+            
+            if($importFile){
+                //probehne po importu souboru
+            }            
+        }
+     
+        return $this->render('teacher/import.html.twig', [
             'form' => $form->createView(),
         ]);
     }
