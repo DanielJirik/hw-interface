@@ -1,3 +1,6 @@
 {
-    "template": "home.html.twig"
+    "template": "login.html.twig",
+    "vars" : {
+        "action" : ""
+    }
 }
