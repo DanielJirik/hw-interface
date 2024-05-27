@@ -1,8 +1,24 @@
-{% extends "menu.html.twig" %}
-{% block navbar %}
-    <ul>
-        <a href="import"><li><h2>Import</h2></li></a></li>
-        <a href="group"><li><h2>Groups</h2></li></a></li>
-        <a href="homeworks-index"><li><h2>Homeworks/Tests</h2></li></a></li>
-    </ul>
+{% extends "home.html.twig" %}
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/home.css">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<main>
+    {% block page_header %}
+    {% endblock %}
+    <div class="cards-container">
+        {% for assignment in assignments %}
+        <div class="card" onclick="location.href='{% block card_href %}{% endblock %}'">
+            {% block card_content %}
+            {% endblock %}
+        </div>
+        {% endfor %}
+    </div>
+    {% block page_footer %}
+    {% endblock %}
+</main>
 {% endblock %}
