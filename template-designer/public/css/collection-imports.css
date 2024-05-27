@@ -1,0 +1,74 @@
+.table{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    max-width: 50em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: #222831;
+}
+.imports{
+    width: 100%;
+    color: white;
+    border-radius: .25em;
+    border-color: white;
+}
+tr{
+    margin-bottom: 2em;
+}
+
+th{
+    padding-bottom: 1.5em;
+    font-size: larger;
+    font-weight: bolder;
+    border-bottom: 2px solid #ddd;
+} 
+
+td {
+    border-bottom: 2px solid #ddd;
+    padding: .5em;
+    font-size: larger;
+    font-weight: bolder;
+}
+input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+    accent-color: green;
+}
+
+          
+  
+
+
+
+.btn-start{
+    margin-top: 1em;
+    text-align: end;
+}
+.start{
+    border-radius: .25em;
+    padding: .4em;
+    font-size: larfe;
+    font-weight: bold;
+    background-color: white;
+    color: #222831;
+    border: none;
+}
+.start:hover{
+    cursor: pointer;
+}
+
+.types-check{
+    color: rgb(55, 156, 55);
+}
+.types-mark{
+    color: rgb(196, 59, 59);
+}
+.types-rotate{
+    color: rgb(196, 196, 77);
+}
+
+.name{
+    text-align: end;
+}
