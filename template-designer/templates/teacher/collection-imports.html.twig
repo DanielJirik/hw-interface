@@ -15,16 +15,17 @@
                     </div>
                 </th>
             </tr>
-            {% for i in scripts %}
-                <tr>
-                    <td>{{ i }}</td>
-                    <td><input type="checkbox" class="ckeckboxes"></td>
-                </tr>
-            {% endfor %}
+            {% block data %}
+                {% for i in scripts %}
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td><input type="checkbox" class="ckeckboxes"></td>
+                    </tr>
+                {% endfor %}
+            {% endblock %}
         </table>
         <div class="btn-start">
-            <a href="collection-progress"><input class="start" type="button" value="Start"></a>
+            {% block btn %}<a href="collection-progress"><input class="start" type="button" value="Start"></a>{% endblock %}
         </div>
     </div>
-    
 {% endblock %}

@@ -1,30 +1,14 @@
-{% extends "home.html.twig" %}
-{% block style %}
-    {{ parent() }}
-    <link rel="stylesheet" href="css/collection-imports.css">
+{% extends "teacher/collection-imports.html.twig" %}
+{% block data %}
+    {% for i in students %}
+        <tr>
+            <td>{{ i }}</td>
+            <td><input type="checkbox" class="ckeckboxes"></td>
+        </tr>
+    {% endfor %}
 {% endblock %}
-{% block body %}
-    <div class="table">
-        <table class="imports">
-            <tr>
-                <th>Students</th>
-                <th>
-                    <div>
-                        <input class="start"type="button" value="Select all" href="import">
-                        <input class="start"type="button" value="Unselect all" href="import">
-                    </div>
-                </th>
-            </tr>
-            {% for i in students %}
-                <tr>
-                    <td>{{ i }}</td>
-                    <td><input type="checkbox" class="ckeckboxes"></td>
-                </tr>
-            {% endfor %}
-        </table>
-        <div class="btn-start">
-            <input class="start" type="button" value="Download">
-        </div>
+{% block btn %}
+    <div class="btn-start">
+        <input class="start" type="button" value="Download">
     </div>
-    
 {% endblock %}
