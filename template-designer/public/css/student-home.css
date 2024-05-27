@@ -40,3 +40,57 @@ body main .switch > .selected {
     color: white;
     border: none;
 }
+
+.card {
+    padding: .75em 1.25em;
+}
+
+.desc-container:nth-child(2) {
+    border-radius: 5px;
+}
+
+.desc-container > .title-desc {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.desc-container .group-desc {
+    font-size: 14px;
+    color: #212121;
+}
+
+.desc-container .softdate-desc {
+    background-color: #222831;
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.desc-container .harddate-desc {
+    background-color: #222831;
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.desc-container .harddate-desc > div, .desc-container .softdate-desc > div {
+    color: darkgreen;
+}
+
+.desc-container:nth-child(2) > div {
+    border: 1px solid #222831;
+    border-radius: 5px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.desc-container > div .out-of-date {
+    color: crimson;
+}
+
+.date {
+    padding: 0 10px;
+    font-size: 20px;
+}

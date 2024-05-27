@@ -25,5 +25,18 @@
 {% endblock %}
 
 {% block card_content %}
-
+<div class="desc-container">
+    <div class="title-desc">{{ assignment.title|length > 10 ? assignment.title|slice(0, 10) ~ '...' : assignment.title }}</div>
+    <div class="group-desc">{{ assignment.group }}</div>
+</div>
+<div class="desc-container">
+    <div>
+        <div class="softdate-desc">Odevzdat do</div>
+        <div class="date">{{ assignment.soft }}</div>
+    </div>
+    <div>
+        <div class="harddate-desc">Uzávěrka v</div>
+        <div class="date">{{ assignment.hard }}</div>
+    </div>
+</div>
 {% endblock %}
