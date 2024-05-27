@@ -1,0 +1,28 @@
+{% extends "home.html.twig" %}
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/collection-imports.css">
+    <script src="https://kit.fontawesome.com/cceb3c1a4c.js" crossorigin="anonymous"></script>
+{% endblock %}
+{% block body %}
+    <div class="table">
+        <table class="imports">
+            <tr>
+                <th class="name">Scripts</th>
+                <th>
+                </th>
+            </tr>
+            {% for i in scripts %}
+                <tr>
+                    <td>{{ i }}</td>
+                    <td>
+                        <i class="types-mark fa-solid fa-xmark"></i>
+                        <i class="types-rotate fa-solid fa-rotate-right"></i>  
+                        <i class="types-check fa-solid fa-check"></i>  
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+{% endblock %}
