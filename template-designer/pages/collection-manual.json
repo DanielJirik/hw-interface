@@ -1,0 +1,7 @@
+{
+    "template": "teacher/collection-manual.html.twig",
+    "vars":
+    {
+        "students": ["Karel", "Pavel", "Anna"]
+    }
+}
