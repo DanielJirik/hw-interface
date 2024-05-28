@@ -1,6 +1,5 @@
 let password_icon = document.querySelector("#password_icon");
 let password_input = document.querySelector(".input:nth-child(3) input");
-
 let lock_icon = document.querySelector("#lock");
 
 var shown = false;

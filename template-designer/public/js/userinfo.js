@@ -14,14 +14,11 @@ function show() {
 }
 
 function hide(event) {
-    if (event.srcElement == icon){
-        if (!document.querySelector(".user:hover")) {
-            div.style.display = "none";
-        }
+    if (event.srcElement == icon && !document.querySelector(".user:hover")){
+        div.style.display = "none";
     }
     else {
-        if (!document.querySelector(".user:hover")) {
+        if (!document.querySelector(".user:hover"))
             div.style.display = "none";
-        }
     }
 }
