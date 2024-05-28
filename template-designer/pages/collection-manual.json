@@ -2,6 +2,7 @@
     "template": "teacher/collection-manual.html.twig",
     "vars":
     {
+        "navhref" : "teacher-home",
         "students": ["Karel", "Pavel", "Anna"]
     }
 }

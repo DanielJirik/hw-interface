@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <h2 id="navtext">{% block navtext %}HW-INTERFACE{% endblock %}</h2>
+        <h2 id="navtext"><a href="{{ asset(navhref) }}">{% block navtext %}HW-INTERFACE{% endblock %}</a></h2>
         <ul>
             {% block navbar %}
             <a href=""><li><h2>XYZ</h2></li></a></li>

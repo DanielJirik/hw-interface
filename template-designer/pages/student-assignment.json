@@ -1,12 +1,15 @@
 {
     "template": "student/student-assignment.html.twig",
-    "assignments":{
-        "a1":{
-            "id": "0",
-            "title": "PHP Assignment",
-            "soft_deadline": "10/10/2024",
-            "hard_deadline": "11/11/2024",
-            "description": "PHP (rekurzivní zkratka PHP: Hypertext Preprocessor,\n\r česky „PHP: Hypertextový preprocesor“,\n\r původně Personal Home Page) je skriptovací programovací jazyk.\n\r Je určený především pro programování dynamických internetových stránek\n\r a webových aplikací například ve formátu HTML, XHTML či WML.\n\r PHP lze použít i k tvorbě konzolových a desktopových aplikací.\n\r Pro desktopové použití existuje kompilovaná forma jazyka."
+    "vars" : {
+        "navhref" : "student-home",
+        "assignments":{
+            "a1":{
+                "id": "0",
+                "title": "PHP Assignment",
+                "soft_deadline": "10/10/2024",
+                "hard_deadline": "11/11/2024",
+                "description": "PHP (rekurzivní zkratka PHP: Hypertext Preprocessor,\n\r česky „PHP: Hypertextový preprocesor“,\n\r původně Personal Home Page) je skriptovací programovací jazyk.\n\r Je určený především pro programování dynamických internetových stránek\n\r a webových aplikací například ve formátu HTML, XHTML či WML.\n\r PHP lze použít i k tvorbě konzolových a desktopových aplikací.\n\r Pro desktopové použití existuje kompilovaná forma jazyka."
+            }
         }
     }
 }

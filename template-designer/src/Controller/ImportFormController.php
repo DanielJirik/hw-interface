@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ImportFormController extends AbstractController
 {
-    #[Route('/import', name: 'import')]
+    #[Route('/teacher-import', name: 'teacher-import')]
     public function importForm(Request $request): Response
     {
         $form = $this->createForm(ImportFormType::class, null, [
@@ -18,6 +18,7 @@ class ImportFormController extends AbstractController
                 'method'=>'POST'
             ]
         ]);
+        
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()){
@@ -25,11 +26,12 @@ class ImportFormController extends AbstractController
             
             if($importFile){
                 //probehne po importu souboru
-            }            
+            }
         }
-     
-        return $this->render('teacher/import.html.twig', [
+
+        return $this->render('teacher/teacher-import.html.twig', [
             'form' => $form->createView(),
+            'navhref' =>  'teacher-home'
         ]);
     }
 }

@@ -1,0 +1,25 @@
+{% extends "home.html.twig" %}
+
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/home.css">
+{% endblock %}
+
+{% block title %}
+    Assignments
+{% endblock %}
+
+{% block navtext %}
+    TEACHER
+{% endblock %}
+
+{% block navbar %}
+    <ul>
+        <a href="teacher-import"><li><h2>Import</h2></li></a></li>
+        <a href="teacher-home"><li><h2>Groups</h2></li></a></li>
+        <a href="teacher-assignments"><li><h2>Homeworks/Tests</h2></li></a></li>
+    </ul>
+{% endblock %}
+
+{% block card_content %}
+{% endblock %}

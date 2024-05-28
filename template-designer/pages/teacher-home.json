@@ -1,7 +1,8 @@
 {
-    "template": "teacher/group.html.twig",
+    "template": "teacher/teacher-home.html.twig",
     "vars":
     {
+        "navhref" : "teacher-home",
         "assignments": ["PVA", "MAT", "PGV", "PVA", "MAT", "PGV", "PVA", "MAT", "PGV"]
     }
 }

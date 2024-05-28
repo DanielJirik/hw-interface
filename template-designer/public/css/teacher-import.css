@@ -1,4 +1,4 @@
-.import-table{
+.import-table {
     margin: 50px auto;
     width: 50%;
     height: auto;    
@@ -8,7 +8,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-#table-header{
+#table-header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -20,11 +20,11 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-#import_form_importFile{
+#import_form_importFile{ 
     display: none;
 }
 
-#multiple-files{
+#multiple-files {
     background-color: white;
     position: relative;    
     height: 40px;
@@ -40,6 +40,6 @@
     transition-duration: 0.3s;
 }
 
-#multiple-files:hover{
+#multiple-files:hover {
     background-color: lightgray;
 }
