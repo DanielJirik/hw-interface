@@ -82,7 +82,7 @@ body main .switch > .selected {
 .desc-container:nth-child(2) > div {
     border: 1px solid #222831;
     border-radius: 5px;
-    margin: 5% auto;
+    margin: 7% auto;
     text-align: center;
 }
 

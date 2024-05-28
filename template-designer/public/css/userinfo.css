@@ -1,0 +1,26 @@
+.user {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    padding: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.user .username {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .role {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.user .class {
+    margin-top: 10px;
+    font-size: 20px;
+}

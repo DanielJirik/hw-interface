@@ -2,6 +2,12 @@
     "template": "student/student-assignment.html.twig",
     "vars" : {
         "navhref" : "student-home",
+        "user" : {
+            "name" : "Wildto",
+            "gender" : "man",
+            "role" : "Student",
+            "class" : "I3"
+        },
         "assignments":{
             "a1":{
                 "id": "0",

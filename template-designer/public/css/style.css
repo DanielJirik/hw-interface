@@ -27,6 +27,7 @@
 
 .navbar li:hover {
     color: grey;
+    cursor: pointer;
 }
 
 a{
