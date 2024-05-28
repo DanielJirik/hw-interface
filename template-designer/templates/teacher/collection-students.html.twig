@@ -8,8 +8,13 @@
         </tr>
     {% endfor %}
 {% endblock %}
+{% block btnSelect %}
+    <input class="start"type="button" value="Select all" href="import">
+    <input class="start"type="button" value="Unselect all" href="import">
+{% endblock %}
 {% block btnStart %}
     <div class="btn-start">
-        <input class="start" type="button" value="Download">
+        <input class="addNew" type="button" value="Add new">
+        <input class="delete" type="button" value="Delete">
     </div>
 {% endblock %}

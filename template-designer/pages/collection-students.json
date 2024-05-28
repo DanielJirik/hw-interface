@@ -1,0 +1,9 @@
+{
+    "template": "teacher/collection-students.html.twig",
+    "vars":
+    {   
+        "navhref": "teacher-home",
+        "students": ["Karel", "Pavel", "Anna", "Pepa"]
+    } 
+    
+}

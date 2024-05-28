@@ -17,11 +17,13 @@
     <div class="table">
         <table class="imports">
             <tr>
-                <th>Scripts</th>
+                <th>{% block name %}Scripts{% endblock %}</th>
                 <th>
                     <div>
-                        <input class="start"type="button" value="Select all" href="import">
-                        <input class="start"type="button" value="Disselect all" href="import">
+                        {% block btnSelect %}
+                            <input class="start"type="button" value="Select all" href="import">
+                            <input class="start"type="button" value="Unselect all" href="import">
+                        {% endblock %}
                     </div>
                 </th>
             </tr>
@@ -35,7 +37,7 @@
             {% endblock %}
         </table>
         <div class="btn-start">
-            {% block btn %}<a href="collection-progress"><input class="start" type="button" value="Start"></a>{% endblock %}
+            {% block btnStart %}<a href="collection-progress"><input class="start" type="button" value="Start"></a>{% endblock %}
         </div>
     </div>
 {% endblock %}
