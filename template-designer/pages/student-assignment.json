@@ -14,7 +14,7 @@
                 "title": "PHP Assignment",
                 "soft_deadline": "10/10/2024",
                 "hard_deadline": "11/11/2024",
-                "description": "# Markdown test \n ## Second level \n ### Third level"
+                "description": "# Markdown test \n ## Second level \n ### Third level \n Toto je ***BOLD*** \n - First item \n - Second item \n - Third item \n - Fourth item"
             }
         }
     }

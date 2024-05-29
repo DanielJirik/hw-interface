@@ -1,20 +1,37 @@
 {% extends "teacher/collection-imports.html.twig" %}
 {% block name %}Students{% endblock %}
+{% block secHeader %}
+    <div id="groupName">Group Name</div>
+    <div id="editBtns">
+        <i class="fa-solid fa-pencil"></i>
+        <i class="fa-solid fa-trash" id="deletebtn" onclick="alert('KYS');"></i>
+    </div>
+    <div style="clear: both;"></div>
+
+{% endblock %}
 {% block data %}
     {% for i in students %}
         <tr>
             <td>{{ i }}</td>
-            <td><input type="checkbox" class="ckeckboxes"></td>
+            <td id="userButton">
+                <input type="checkbox" class="ckeckboxes">
+            </td>
         </tr>
     {% endfor %}
 {% endblock %}
 {% block btnSelect %}
-    <input class="start"type="button" value="Select all" href="import">
-    <input class="start"type="button" value="Unselect all" href="import">
+    
 {% endblock %}
 {% block btnStart %}
     <div class="btn-start">
-        <input class="addNew" type="button" value="Add new">
-        <input class="delete" type="button" value="Delete">
+        <div class="btnSelect">
+            <input class="start"type="button" value="Select all" href="import">
+            <input class="start"type="button" value="Unselect all" href="import">
+        </div>
+
+        <div class="btnUsers">
+            <input class="addNew" type="button" value="Add new">
+            <input class="delete" type="button" value="Delete" onclick="alert('KYS');">
+        </div>
     </div>
 {% endblock %}

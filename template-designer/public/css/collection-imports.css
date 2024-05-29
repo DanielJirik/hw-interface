@@ -14,8 +14,44 @@
     border-radius: .25em;
     border-color: white;
 }
+
+#userButton{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+}
+
 tr{
     margin-bottom: 2em;
+}
+
+#mainHeader{
+    width: 40%;
+}
+
+#secondHeader{
+    display: block;
+    width: 100%;
+}
+
+#editBtns{
+    display: flex;
+    gap: 1em;
+    float: right;
+}
+
+#groupName{
+    float: left;
+}
+
+#deletebtn{
+    color: rgba(225, 49, 49, 1);
+}
+
+#secondHeader div i{
+    display: inline-block;
+    cursor: pointer;
 }
 
 th{
@@ -36,16 +72,15 @@ input[type="checkbox"] {
     height: 2em;
     accent-color: green;
 }
-
-          
-  
-
-
-
+        
 .btn-start{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 1em;
     text-align: end;
 }
+
 .start{
     border-radius: .25em;
     padding: .4em;
