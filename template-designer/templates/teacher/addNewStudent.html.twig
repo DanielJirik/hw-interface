@@ -1,0 +1,38 @@
+{% extends "form.html.twig" %}
+{% block title %}
+    Add students
+{% endblock %}
+
+{% block navtext %}
+    TEACHER
+{% endblock %}
+
+{% block navbar %}
+    <ul>
+        <a href="teacher-import"><li><h2>Import</h2></li></a></li>
+        <a href="teacher-home"><li><h2>Groups</h2></li></a></li>
+        <a href="teacher-assignments"><li><h2>Homeworks/Tests</h2></li></a></li>
+    </ul>
+{% endblock %}
+
+{% block listStudents %}
+    <div class="listStudents">
+        <ul>
+            {% for user in usernames %}
+                <li>{{ user }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+{% block actionName %}Add new Student{% endblock %}
+
+{% block content %}
+    <h2 class="input-texts">Name: </h2>
+    <input type="text">
+    <input class="btn-submit" type="submit" value="Add to list">
+{% endblock %}
+
+{% block btnSubmit %}<input class="btn-send" type="submit" value="Add to group">{% endblock %}
+
+
