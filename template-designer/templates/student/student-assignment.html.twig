@@ -54,7 +54,9 @@
         <h3 id="date">Hard deadline: {{assignments.a1.hard_deadline}}</h3>
         <div class="description">
             <h3 id="">Description</h3>
-            <p>{{assignments.a1.description}}</p>
+            {% apply markdown_to_html %}
+            {{ assignments.a1.description }}
+            {% endapply %}
         </div>
 
         <label for="file" id="custom-file-input">        
