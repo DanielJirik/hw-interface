@@ -43,3 +43,22 @@
 #multiple-files:hover {
     background-color: lightgray;
 }
+
+.imports{
+    display: flex;
+    justify-content: space-between;    
+}
+
+#delete-script{
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;    
+    background-color: rgba(225, 49, 49, 1);
+    color: white;
+    margin-right: 1em;
+}
+
+#script-name{
+    padding: 0 0 0.5em 1em;
+}
