@@ -19,7 +19,7 @@
     border: none;
     margin-top: .5em;
 }
-ul{
+ul.list{
     text-decoration: none;
     list-style: none;
     font-family: 'Helvetica';
