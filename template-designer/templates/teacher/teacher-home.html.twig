@@ -23,7 +23,7 @@
 
 {% block page_header %}
     <div class="addGroup">
-        <input class="newG" type="button" value="+" onclick="openPopup()">
+        <input class="newG" type="button" value="+">
     </div>
 {% endblock %}
 {% block card_href %}collection-students{% endblock %}
@@ -32,8 +32,4 @@
 {% endblock %}
 
 {% block page_footer %}
-    <div class="popup" id="popup">
-        <h2>Do you really want to delete the group?</h2>
-        <button type="button" value="ok" onclick="closePopup()"></button>
-    </div>
 {% endblock %}
