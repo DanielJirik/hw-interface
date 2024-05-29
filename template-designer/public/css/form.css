@@ -1,0 +1,87 @@
+.div-form{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: #222831;
+}
+.div-content{
+    background-color: #222831;
+    padding: 2em;
+}
+
+.listStudents{
+    background-color: white;
+    padding: .5em;
+    border-radius: .30em;
+    border: none;
+    margin-top: .5em;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Helvetica';
+    font-weight: bolder;
+    font-size: larger;
+}
+input{
+    font-family: 'Arial';
+    font-size: larger;
+    border-radius: .30em;
+    border: none;
+    background-color: white;
+    color: #222831;
+    margin-bottom: .5em;
+    padding: .35em;
+}
+
+.name-form{
+    color:white;
+    font-weight: bolder;
+    font-family: 'Helvetica';
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.input-texts{
+    color:white;
+    font-weight: bolder;
+    font-family: 'Helvetica';
+    margin-bottom: .5em;
+}
+
+.btn-submit{
+    font-family: 'Arial';
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: .30em;
+    border: none;
+    background-color: #1d3355;
+    color: rgba(166, 219, 88, 0.853);
+    padding: .35em;
+}
+
+.btn-send{
+    font-family: 'Arial';
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: .30em;
+    border: none;
+    background-color: #1d3355;
+    color: rgba(166, 219, 88, 0.853);
+    padding: .35em;
+}
+.btn-s{
+    text-align: center;
+    margin-top: .5em;
+}
+li{
+    padding: .2em .3em .2em .3em;
+    border-bottom: 1px solid #cecece;
+}
+
+li:last-child {
+    border: none;
+}
