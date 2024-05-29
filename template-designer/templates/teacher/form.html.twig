@@ -1,0 +1,50 @@
+{% extends "menu.html.twig" %}
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/form.css">
+{% endblock %}
+{% block title %}
+    New
+{% endblock %}
+
+{% block navtext %}
+    TEACHER
+{% endblock %}
+
+{% block navbar %}
+    <ul>
+        <a href="teacher-import"><li><h2>Import</h2></li></a></li>
+        <a href="teacher-home"><li><h2>Groups</h2></li></a></li>
+        <a href="teacher-assignments"><li><h2>Homeworks/Tests</h2></li></a></li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+    <div class="div-form">
+        <form method="post">
+            <div class="div-content">
+                <h1 class="name-form">{% block actionName %}Add new Student{% endblock %}</h2>
+                {% block content %}
+                    <h2 class="input-texts">Name: </h2>
+                    <input type="text">
+                    <input class="btn-submit" type="submit" value="Add to list">
+                {% endblock %}
+                {% block listStudents %}
+                    <div class="listStudents">
+                        <ul>
+                            {% for user in usernames %}
+                                <li>{{ user }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endblock %}
+                <div class="btn-s">
+                    {% block btnSubmit %}<input class="btn-send" type="submit" value="Add to list">{% endblock %}
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+
+
