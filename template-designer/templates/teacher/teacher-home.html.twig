@@ -28,13 +28,7 @@
 {% endblock %}
 {% block card_href %}collection-students{% endblock %}
 {% block card_content %}
-<h2 class="group-name">{{ assignment }}</h2>
-    <form method="post">
-        <div class="buttons">
-            <a href="teacher-home"><input class="button-r" type="button" value="Rename"></a>
-            <a href="teacher-home"><input class="button-d" type="button"value="Delete"></a>
-        </div>
-    </form>
+<h2 class="group-name">{{ assignment|length > 10 ? assignment|slice(0, 8) ~ '...' : assignment}}</h2>    
 {% endblock %}
 
 {% block page_footer %}
