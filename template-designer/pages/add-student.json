@@ -1,5 +1,5 @@
 {
-    "template": "teacher/addNewStudent.html.twig",
+    "template": "teacher/add-student.html.twig",
     "vars":{
         "navhref": "teacher-home",
         "usernames": ["Karel", "Pavel", "Anna", "Pepa"]

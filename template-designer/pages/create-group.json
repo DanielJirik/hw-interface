@@ -1,5 +1,5 @@
 {
-    "template": "teacher/createGroup.html.twig",
+    "template": "teacher/create-group.html.twig",
     "vars":{
         "navhref": "teacher-home"
     }
