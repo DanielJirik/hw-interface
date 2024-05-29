@@ -17,8 +17,9 @@
     <div class="table">
         <table class="imports">
             <tr>
-                <th>{% block name %}Scripts{% endblock %}</th>
-                <th>
+                <th id="mainHeader">{% block name %}Scripts{% endblock %}</th>
+                <th id="secondHeader">
+                    {% block secHeader %}Second Header{% endblock %}
                     <div>
                         {% block btnSelect %}
                             <input class="start"type="button" value="Select all" href="import">
