@@ -1,11 +1,13 @@
 {% extends "form.html.twig" %}
-{% block title %}
-    New group
+
+{% block styles %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/teacher-create-group.css') }}">
 {% endblock %}
 
-{% block navtext %}
-    TEACHER
-{% endblock %}
+{% block title %}New group{% endblock %}
+
+{% block navtext %}TEACHER{% endblock %}
 
 {% block navbar %}
     <ul>
@@ -15,14 +17,10 @@
     </ul>
 {% endblock %}
 
-{% block listStudents %}
-{% endblock %}
-
-{% block actionName %}New group{% endblock %}
+{% block form_title %}New group{% endblock %}
 
 {% block content %}
     <h2 class="input-texts">Name: </h2>
     <input type="text">
+    <input class="btn-send" type="submit" value="Create new Group">
 {% endblock %}
-
-{% block btnSubmit %}<input class="btn-send" type="submit" value="Create new Group">{% endblock %}

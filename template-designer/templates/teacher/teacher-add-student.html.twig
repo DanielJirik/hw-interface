@@ -1,4 +1,10 @@
 {% extends "form.html.twig" %}
+
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/teacher-add-student.css') }}">
+{% endblock %}
+
 {% block title %}
     Add students
 {% endblock %}
@@ -14,7 +20,8 @@
         <a href="teacher-assignments"><li><h2>Homeworks/Tests</h2></li></a></li>
     </ul>
 {% endblock %}
-{% block actionName %}Add Student{% endblock %}
+
+{% block form_title %}Add Student{% endblock %}
 
 {% block content %}
     <h2 class="input-texts">Name: </h2>

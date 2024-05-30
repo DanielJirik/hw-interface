@@ -1,0 +1,36 @@
+{% extends "form.html.twig" %}
+
+{% block style %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/teacher-create-assignment.css') }}">
+{% endblock %}
+
+{% block title %}Create assignment{% endblock %}
+
+{% block navtext %}
+    TEACHER
+{% endblock %}
+
+{% block navbar %}
+    <ul>
+        <a href="teacher-import"><li><h2>Import</h2></li></a></li>
+        <a href="teacher-home"><li><h2>Groups</h2></li></a></li>
+        <a href="teacher-assignments"><li><h2>Homeworks/Tests</h2></li></a></li>
+    </ul>
+{% endblock %}
+
+{% block form_title %}Create assignment{% endblock %}
+
+{% block content %}
+<div class="content-header">
+    <h2>Title <i class="fa-solid fa-pencil"></i></h2>
+    <select name="" id="">
+        <option value="" selected="">I3a</option>
+        <option value="">I3b</option>
+    </select>
+</div>
+<div class="textarea-conainer">
+    <textarea name=""></textarea>
+</div>
+<input type="submit" value="Create">
+{% endblock %}

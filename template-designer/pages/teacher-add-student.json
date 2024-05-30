@@ -1,7 +1,8 @@
 {
-    "template": "teacher/add-student.html.twig",
+    "template": "teacher/teacher-add-student.html.twig",
     "vars":{
         "navhref": "teacher-home",
+        "action" : "",
         "usernames": ["Karel", "Pavel", "Anna", "Pepa"]
     }
 }

@@ -1,6 +1,0 @@
-{
-    "template": "teacher/create-group.html.twig",
-    "vars":{
-        "navhref": "teacher-home"
-    }
-}
