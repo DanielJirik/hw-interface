@@ -23,15 +23,8 @@
     
 {% endblock %}
 {% block btnStart %}
-    <div class="btn-start">
-        <div class="btnSelect">
-            <input class="start"type="button" value="Select all" href="import">
-            <input class="start"type="button" value="Unselect all" href="import">
-        </div>
-
-        <div class="btnUsers">
-            <a href="add-student"><input class="addNew" type="button" value="Add new"></a>
-            <input class="delete" type="button" value="Delete" onclick="alert('KYS');">
-        </div>
+    <div class="btnUsers">
+        <input class="addNew" type="button" value="Add new"  onclick="location.href = 'teacher-add-student';">
+        <input class="delete" type="button" value="Delete" onclick="alert('KYS');">
     </div>
 {% endblock %}
