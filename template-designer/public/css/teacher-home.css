@@ -1,3 +1,9 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button-r{
     border-radius: .3em;
     border-color: rgb(158, 158, 158);
