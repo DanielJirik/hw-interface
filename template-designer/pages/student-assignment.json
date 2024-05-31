@@ -2,6 +2,7 @@
     "template": "student/student-assignment.html.twig",
     "vars" : {
         "navhref" : "student-home",
+        "menu" : "student",
         "user" : {
             "name" : "Wildto",
             "gender" : "man",

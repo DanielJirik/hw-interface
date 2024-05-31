@@ -2,6 +2,7 @@
     "template": "teacher/teacher-create-group.html.twig",
     "vars":{
         "navhref": "teacher-home",
+        "menu" : "teacher",
         "action" : ""
     }
 }

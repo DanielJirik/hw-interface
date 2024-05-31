@@ -1,15 +1,5 @@
 {% extends "teacher/collection-imports.html.twig" %}
-{% block navtext %}TEACHER{% endblock %}
 {% block name %}Students{% endblock %}
-{% block secHeader %}
-    <div id="groupName">Group Name</div>
-    <div id="editBtns">
-        <i class="fa-solid fa-pencil"></i>
-        <i class="fa-solid fa-trash" id="deletebtn" onclick="alert('KYS');"></i>
-    </div>
-    <div style="clear: both;"></div>
-
-{% endblock %}
 {% block data %}
     {% for i in students %}
         <tr>

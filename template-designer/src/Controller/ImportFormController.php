@@ -31,7 +31,8 @@ class ImportFormController extends AbstractController
 
         return $this->render('teacher/teacher-import.html.twig', [
             'form' => $form->createView(),
-            'navhref' =>  'teacher-home'
+            'navhref' =>  'teacher-home',
+            'menu' => 'teacher'
         ]);
     }
 }

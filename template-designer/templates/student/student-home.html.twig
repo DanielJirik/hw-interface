@@ -3,47 +3,9 @@
 {% block style %}
     {{ parent() }}
     <link rel="stylesheet" href='{{ asset("css/student-home.css") }}'>
-    <link rel="stylesheet" href='{{ asset("css/userinfo.css") }}'>
-{% endblock %}
-
-{% block javascripts %}
-<script defer src="{{ asset('js/userinfo.js') }}"></script>
 {% endblock %}
 
 {% block title %}Home{% endblock %}
-
-{% block navbar %}
-    <a><li><i id="icon" class="fa fa-user fa-2x"></i></li></a></li>
-    <div class="user">
-        <h1 class="username">
-            {{ user.name }}
-            {% if user.gender == "man" %}
-                <i class="fa-solid fa-person"></i>
-            {% else %}
-                <i class="fa-solid fa-person-dress"></i>
-            {% endif %}
-        </h1>
-        <h2 class="role">{{ user.role }}</h2>
-        <h2 class="class">
-            {% if user.class|first|lower == 'i' %}
-            <i class="fa-solid fa-computer"></i>
-            {% elseif user.class|first|lower == 'e' %}
-            <i class="fa-solid fa-bolt"></i>
-            {% elseif user.class|first|lower == 's' %}
-            <i class="fa-solid fa-gear"></i>
-            {% elseif user.class|first|lower == 'v' %}
-            <i class="fa-solid fa-gavel"></i>
-            {% elseif user.class|first|lower == 'a' %}
-            <i class="fa-solid fa-car"></i>
-            {% elseif user.class|first|lower == 'n' %}
-            <i class="fa-solid fa-wrench"></i>
-            {% elseif user.class|first|lower == 'l' %}
-            <i class="fa-solid fa-laptop"></i>
-            {% endif %}
-            {{ user.class|upper }}
-        </h2>
-    </div>
-{% endblock %}
 
 {% block card_href %}{{ asset("student-assignment") }}{% endblock %}
 

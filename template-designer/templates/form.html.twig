@@ -1,8 +1,10 @@
 {% extends "menu.html.twig" %}
+
 {% block style %}
     {{ parent() }}
     <link rel="stylesheet" href="css/form.css">
 {% endblock %}
+
 {% block body %}
 <main>
     <form action="{{ action }}" method="post">

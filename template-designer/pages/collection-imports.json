@@ -3,6 +3,7 @@
     "vars":
     {
         "navhref" : "teacher-home",
+        "menu" : "teacher",
         "action": "",
         "scripts": ["PHP 1.2", "HTML 1.0", "CSS 3.0"]
     }

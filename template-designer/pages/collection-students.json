@@ -3,6 +3,7 @@
     "vars":
     {   
         "navhref": "teacher-home",
+        "menu" : "teacher",
         "action": "",
         "students": ["Karel", "Pavel", "Anna", "Pepa"]
     } 

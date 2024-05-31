@@ -1,7 +1,5 @@
 {% extends "teacher/collection-imports.html.twig" %}
-{% block navtext %}TEACHER{% endblock %}
-{% block name %}Students{% endblock %}
-{% block secHeader %}{% endblock %}
+
 {% block data %}
     {% for i in students %}
         <tr>
@@ -10,6 +8,7 @@
         </tr>
     {% endfor %}
 {% endblock %}
+
 {% block btnStart %}
     <input class="start" type="button" value="Download">
 {% endblock %}

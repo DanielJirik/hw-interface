@@ -3,6 +3,7 @@
     "vars":
     {
         "navhref" : "teacher-home",
+        "menu" : "teacher",
         "assignments": ["PVA", "MAT", "PGV", "PVA", "MAT", "PGV", "PVA", "MAT", "PGV"]
     }
 }

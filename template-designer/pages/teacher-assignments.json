@@ -2,6 +2,7 @@
     "template": "teacher/teacher-assignments.html.twig",
     "vars" : {
         "navhref" : "teacher-home",
+        "menu" : "teacher",
         "assignments" : [
             {"title" : "Matika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : true},
             {"title" : "Fyzika", "soft" : "12.2.2024", "hard" : "1.5.2025", "group" : "I3b-PVA", "submitted" : false},
