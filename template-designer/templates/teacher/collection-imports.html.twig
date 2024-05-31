@@ -1,9 +1,9 @@
-{% extends "home.html.twig" %}
+{% extends "form.html.twig" %}
 {% block style %}
     {{ parent() }}
     <link rel="stylesheet" href="css/collection-imports.css">
 {% endblock %}
-
+{% block navtext %}TEACHER{% endblock %}
 {% block navbar %}
     <ul>
         <a href="teacher-import"><li><h2>Import</h2></li></a></li>
@@ -13,8 +13,7 @@
 {% endblock %}
 
 
-{% block body %}
-    <div class="table">
+{% block content %}
         <table class="imports">
             <tr>
                 <th id="mainHeader">{% block name %}Scripts{% endblock %}</th>
@@ -32,11 +31,12 @@
             {% endblock %}
         </table>
         <div class="btn-start">
-            <div>
-                <input class="start"type="button" value="Select all" href="import">
-                <input class="start"type="button" value="Unselect all" href="import">
-            </div>
+            {% block btnSelect %}
+                <div>
+                    <input class="start"type="button" value="Select all" href="import">
+                    <input class="start"type="button" value="Unselect all" href="import">
+                </div>
+            {% endblock %}
             {% block btnStart %}<a href="collection-progress"><input class="start" type="button" value="Start"></a>{% endblock %}
         </div>
-    </div>
 {% endblock %}

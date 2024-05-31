@@ -1,4 +1,5 @@
 {% extends "teacher/collection-imports.html.twig" %}
+{% block navtext %}TEACHER{% endblock %}
 {% block name %}Students{% endblock %}
 {% block secHeader %}
     <div id="groupName">Group Name</div>
@@ -23,6 +24,10 @@
     
 {% endblock %}
 {% block btnStart %}
+    <div>
+        <input class="start"type="button" value="Select all" href="import">
+        <input class="start"type="button" value="Unselect all" href="import">
+    </div>
     <div class="btnUsers">
         <input class="addNew" type="button" value="Add new"  onclick="location.href = 'teacher-add-student';">
         <input class="delete" type="button" value="Delete" onclick="alert('KYS');">

@@ -1,5 +1,6 @@
-.content {
-    width: auto;
+form {
+    width: 40%;
+    max-width: 600px;
 }
 
 .content .content-header {
