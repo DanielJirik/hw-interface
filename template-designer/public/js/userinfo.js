@@ -1,10 +1,12 @@
 let div = document.querySelector(".user");
 let icon = document.querySelector(".navbar li");
 
-div.style.display = "none";
-div.addEventListener("mouseleave", hide);
-icon.addEventListener("mouseleave", hide);
-icon.addEventListener("click", show);
+if (div !== null && icon !== null) {
+    div.style.display = "none";
+    div.addEventListener("mouseleave", hide);
+    icon.addEventListener("mouseleave", hide);
+    icon.addEventListener("click", show);
+}
 
 function show() {
     if (div.style.display == "none")

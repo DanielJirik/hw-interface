@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.button-r {
+.button-r{
     border-radius: .3em;
     border-color: rgb(158, 158, 158);
     padding: .3em;
@@ -17,7 +17,7 @@
     color: white;
 }
 
-.button-d {
+.button-d{
     border-radius: .3em;
     border-color: rgb(158, 158, 158);
     padding: .3em;
@@ -30,7 +30,7 @@
     color: rgba(205, 79, 79, 0.764);
 }
 
-.addGroup {
+.addGroup{
     display: flex;
     justify-content:flex-end;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
     margin-right: 1em;
 }
 
-.newG {
+.newG{
     border-radius: .3em;
     border-color: rgb(158, 158, 158);
     padding: .3em;
@@ -52,17 +52,19 @@
     justify-content: end;
 }
 
-.group-name {
+.group-name{
     color: black;
     font-size: 35px;
 }
 
-.buttons {
+.buttons{
     margin-top: .5em;
     margin-bottom: .25em;
 }
 
-.popup {
+
+
+.popup{
     width: 400px;
     background-color: silver;
     border-radius: 6px;
@@ -76,7 +78,7 @@
     color: #333;
 }
 
-.open-popup {
+.open-popup{
     width: 400px;
     background-color: silver;
     border-radius: 6px;
