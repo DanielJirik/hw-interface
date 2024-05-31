@@ -45,6 +45,10 @@ body main .switch > .selected {
     padding: .75em 1.25em;
 }
 
+.desc-container{
+    padding-right: 1em;    
+}
+
 .desc-container:nth-child(2) {
     border-radius: 5px;
 }

@@ -19,25 +19,32 @@
             <tr>
                 <th id="mainHeader">{% block name %}Scripts{% endblock %}</th>
                 <th id="secondHeader">
-                    {% block secHeader %}Second Header{% endblock %}
+                    {% block secHeader %}{% endblock %}
+<<<<<<< HEAD
                     <div>
                         {% block btnSelect %}
                             <input class="start"type="button" value="Select all" href="import">
                             <input class="start"type="button" value="Unselect all" href="import">
                         {% endblock %}
                     </div>
+=======
+>>>>>>> 9f8ecbd332d89296a881f3470ea3f4622331aef2
                 </th>
             </tr>
             {% block data %}
                 {% for i in scripts %}
                     <tr>
                         <td>{{ i }}</td>
-                        <td><input type="checkbox" class="ckeckboxes"></td>
+                        <td><input type="checkbox" class="checkboxes"></td>
                     </tr>
                 {% endfor %}
             {% endblock %}
         </table>
         <div class="btn-start">
+            <div>
+                <input class="start"type="button" value="Select all" href="import">
+                <input class="start"type="button" value="Unselect all" href="import">
+            </div>
             {% block btnStart %}<a href="collection-progress"><input class="start" type="button" value="Start"></a>{% endblock %}
         </div>
     </div>

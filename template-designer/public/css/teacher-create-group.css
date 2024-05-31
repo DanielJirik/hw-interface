@@ -1,0 +1,10 @@
+.btn-send {
+    font-family: 'Arial';
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: .30em;
+    border: none;
+    background-color: #1d3355;
+    color: rgba(166, 219, 88, 0.853);
+    padding: .35em;
+}

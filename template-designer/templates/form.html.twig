@@ -4,21 +4,13 @@
     <link rel="stylesheet" href="css/form.css">
 {% endblock %}
 {% block body %}
-    <div class="div-form">
-        <form method="post">
-            <div class="div-content">
-                <h1 class="name-form">{% block actionName %}{% endblock %}</h2>
-                {% block content %}
-                {% endblock %}
-                {% block listStudents %}
-                {% endblock %}
-                <div class="btn-s">
-                    {% block btnSubmit %}{% endblock %}
-                </div>
-            </div>
-        </form>
-    </div>
+<main>
+    <form action="{{ action }}" method="post">
+        <h1 class="form-title">{% block form_title %}{% endblock %}</h2>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </form>
+</main>
 {% endblock %}
-
-
-

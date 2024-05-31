@@ -70,4 +70,5 @@ main form input[type="submit"] {
     border: none;
     border-radius: 30px;
     width: 70%;
+    cursor: pointer;
 }
